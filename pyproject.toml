@@ -27,7 +27,8 @@ classifiers = [
     "Operating System :: OS Independent",
 ]
 dependencies = [
-    "stddraw",
+    # stddraw is required but not available on PyPI
+    # Install manually if needed
 ]
 
 [project.optional-dependencies]

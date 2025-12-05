@@ -1,4 +1,5 @@
 # Core dependencies
-stddraw
+# Note: stddraw is required but not available on PyPI
+# You may need to install it manually or from source
 
 # Development dependencies (install with: pip install -r requirements-dev.txt)

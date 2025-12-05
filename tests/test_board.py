@@ -1,9 +1,5 @@
 """Tests for the Board class."""
 
-import sys
-import os
-sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'src'))
-
 from lines_of_action.board import Board
 
 

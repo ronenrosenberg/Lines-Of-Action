@@ -29,7 +29,8 @@ setup(
     ],
     python_requires=">=3.8",
     install_requires=[
-        "stddraw",
+        # stddraw is required but not available on PyPI
+        # Install manually if needed
     ],
     extras_require={
         "dev": [

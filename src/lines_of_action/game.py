@@ -20,6 +20,7 @@ PIECE_RADIUS_RATIO = 0.4
 HIGHLIGHT_RADIUS_RATIO = 0.5
 SQUARE_HIGHLIGHT_RATIO = 0.93
 FRAME_DELAY = 0  # milliseconds
+RADIUS_MULTIPLIER = 2.0  # Multiplier for converting half-side to radius
 
 
 class LinesOfAction:
@@ -108,7 +109,7 @@ class LinesOfAction:
         """
         color = stddraw.WHITE if team == "white" else stddraw.BLACK
         stddraw.setPenColor(color)
-        radius = self.half / 0.5 * PIECE_RADIUS_RATIO
+        radius = self.half * RADIUS_MULTIPLIER * PIECE_RADIUS_RATIO
         stddraw.filledCircle(
             x * self.side + self.half, 
             y * self.side + self.half, 
@@ -125,7 +126,7 @@ class LinesOfAction:
         """
         # Draw yellow highlight
         stddraw.setPenColor(stddraw.YELLOW)
-        highlight_radius = self.half / 0.5 * HIGHLIGHT_RADIUS_RATIO
+        highlight_radius = self.half * RADIUS_MULTIPLIER * HIGHLIGHT_RADIUS_RATIO
         stddraw.filledCircle(
             x * self.side + self.half, 
             y * self.side + self.half, 

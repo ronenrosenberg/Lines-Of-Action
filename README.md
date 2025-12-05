@@ -21,6 +21,7 @@ Lines of Action is a two-player abstract strategy board game. Players move their
 
 - Python 3.8 or higher
 - pip (Python package manager)
+- stddraw library (note: this may need to be installed manually as it's not available on PyPI)
 
 ### Install from source
 
@@ -29,11 +30,11 @@ Lines of Action is a two-player abstract strategy board game. Players move their
 git clone https://github.com/ronenrosenberg/Lines-Of-Action.git
 cd Lines-Of-Action
 
-# Install dependencies
-pip install -r requirements.txt
-
-# Or install in development mode
+# Install the package
 pip install -e .
+
+# Note: stddraw is required to run the game but is not available on PyPI
+# You may need to install it manually if it's not already available
 ```
 
 ## Usage
