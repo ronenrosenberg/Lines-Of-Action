@@ -2,6 +2,8 @@
 
 A graphical implementation of the strategic board game [Lines of Action](https://en.wikipedia.org/wiki/Lines_of_Action).
 
+> **Note**: This project has been restructured. The old root-level Python files (`Board.py`, `Piece.py`, `LinesOfAction.py`, `*_test.py`) are deprecated. Please use the new `src/` structure going forward.
+
 ## About the Game
 
 Lines of Action is a two-player abstract strategy board game. Players move their pieces in a line (horizontally, vertically, or diagonally) by exactly as many spaces as there are pieces of either color on that line. The goal is to connect all your pieces into a single contiguous group.
